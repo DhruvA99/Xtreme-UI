@@ -1,0 +1,197 @@
+/* .main {
+  display: flex;
+  flex-direction: column;
+} */
+.container_main {
+  padding-top: 7rem;
+  padding-left: 1.4em;
+  text-align: left;
+}
+.main_heading {
+  font-size: 2.1em;
+  font-weight: 600;
+}
+.secondary_heading {
+  font-size: 1.7em;
+  display: block;
+  font-weight: 500;
+
+  padding: 1em 0;
+}
+.tertiery_heading {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-top: 1em;
+}
+.container_main_description {
+  display: block;
+}
+.usage {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.container_usage {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+  justify-content: flex-start;
+}
+.component_boundary {
+  display: flex;
+  flex-wrap: wrap;
+  border: 0.5px solid black;
+  padding: 1em;
+}
+.component_code {
+  height: auto;
+}
+.code_snippet {
+  font-size: 1.3em;
+  padding: none;
+}
+.codeHeading {
+  font-size: 1.3em;
+  padding: 1em 0.7em;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  margin: 3px;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.6s;
+  border: none;
+  outline: none;
+}
+.btn:hover {
+  box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+}
+
+.btn_primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+.btn_primary:focus {
+  border: 0.4px solid var(--primary-hover-color);
+}
+
+.toolTip {
+  position: relative;
+  display: inline-block;
+}
+.toolTipText_top {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0px;
+}
+.toolTipText_top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000 transparent transparent transparent;
+}
+.toolTipText_bottom {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 0px;
+}
+.toolTipText_bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+.toolTipText_right {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 103%;
+}
+.toolTipText_right::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 30%;
+  right: 100%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid rgb(0, 0, 0);
+}
+.toolTipText_left {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 103%;
+}
+.toolTipText_left::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 30%;
+  left: 100%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+
+  border-left: 5px solid #000000;
+}
+.toolTip:hover .toolTipText_top {
+  visibility: visible;
+}
+.toolTip:hover .toolTipText_bottom {
+  visibility: visible;
+}
+.toolTip:hover .toolTipText_right {
+  visibility: visible;
+}
+.toolTip:hover .toolTipText_left {
+  visibility: visible;
+}

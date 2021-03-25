@@ -1,0 +1,126 @@
+/* .main {
+  display: flex;
+  flex-direction: column;
+} */
+.container_main {
+  padding-top: 7rem;
+  padding-left: 1.4em;
+  text-align: left;
+}
+.main_heading {
+  font-size: 2.1em;
+  font-weight: 600;
+}
+.secondary_heading {
+  font-size: 1.7em;
+  display: block;
+  font-weight: 500;
+
+  padding: 1em 0;
+}
+.tertiery_heading {
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-top: 1em;
+}
+.container_main_description {
+  display: block;
+}
+.usage {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.container_usage {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4px;
+  justify-content: flex-start;
+}
+.component_boundary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 0.5px solid black;
+  padding: 1em;
+}
+.component_code {
+  height: auto;
+}
+.code_snippet {
+  font-size: 1.3em;
+  padding: none;
+}
+.codeHeading {
+  font-size: 1.3em;
+  padding: 1em 0.7em;
+}
+
+.btn {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin: 3px;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.6s;
+  border: none;
+  outline: none;
+}
+.btn:hover {
+  box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+}
+
+.btn_primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+.btn_primary:focus {
+  border: 0.4px solid var(--primary-hover-color);
+}
+.badge_main {
+  margin: 0.6em 1em;
+  position: relative;
+}
+
+.badge_circle_right {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 2.5px 5px;
+  font-size: 0.7em;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+.badge_circle_left {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  padding: 2.5px 5px;
+  border-radius: 50%;
+  font-size: 0.7em;
+  background: red;
+  color: white;
+}
+.badge_box_right {
+  position: absolute;
+  top: -10px;
+  border-radius: 5px;
+  right: -10px;
+  font-size: 0.7em;
+  padding: 0.2em;
+  background: red;
+  color: white;
+}
+.badgeIcon_circle_right {
+  position: absolute;
+  top: -10px;
+  padding: 1px 3px;
+  font-size: 0.6em;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
