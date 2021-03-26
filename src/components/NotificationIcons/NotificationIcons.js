@@ -67,7 +67,7 @@ const NotificationIcons = (props) => {
               </div>
               <div className={classes.badge_main}>
                 <i className="fa fa-envelope fa-2x">
-                  <span className={classes.badgeIcon_circle_right}>3</span>
+                  <div className={classes.badgeIcon_circle_right}>3</div>
                 </i>
               </div>
             </div>
