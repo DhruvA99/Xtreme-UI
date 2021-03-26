@@ -14,42 +14,45 @@ const NavBar = (props) => {
         </div>
         <div className={classes.usage}>
           <span className={classes.secondary_heading}>Usage</span>
-          <span className={classes.tertiery_heading}>Examples</span>
-
+          <span className={classes.tertiery_heading}>Example 1</span>
           <div className={classes.container_usage}>
             <div className={classes.component_boundary}>
               <div className={classes.navigation_main}>
                 <div className={classes.navigation_left_side}>
                   <div className={classes.navigation_Hamburger_Icon}>
-                    <span>----</span>
-                    <span>----</span>
-                    <span>----</span>
+                    <div
+                      className={classes.navigation_Hamburger_Icon_item}
+                    ></div>
+                    <div
+                      className={classes.navigation_Hamburger_Icon_item}
+                    ></div>
+                    <div
+                      className={classes.navigation_Hamburger_Icon_item}
+                    ></div>
                   </div>
                   <div className={classes.navigation_logo}>
                     <h3>Logo</h3>
                   </div>
                 </div>
-                <div className={classes.navigation_sidebar}>
-                  <span>Component1</span>
-                  <span>Component2</span>
-                  <span>Component3</span>
-                  <span>Component4</span>
-                </div>
+
                 <div className={classes.navigation_content}>
-                  <span>Component1</span>
-                  <span>Component2</span>
-                  <span>Component3</span>
-                </div>
-                <div className={classes.navigation_right_side}>
-                  <i className="fa fa-shopping-cart"></i>
+                  <span className={classes.navigation_content_item}>
+                    Component1
+                  </span>
+                  <span className={classes.navigation_content_item}>
+                    Component2
+                  </span>
+                  <span className={classes.navigation_content_item}>
+                    Component3
+                  </span>
+                  <i className="fa fa-shopping-cart fa-2x"></i>
                 </div>
               </div>
             </div>
             <br />
             <span className={classes.codeHeading}>Code:</span>
-
             <iframe
-              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C1%29&t=blackboard&wt=none&l=jsx&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=56px&ln=false&fl=1&fm=Hack&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navigation_main%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navigation_left_side%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation_Hamburger_Icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E----%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E----%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%253E----%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation_logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253ELogo%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navigation_sidebar%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EComponent1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EComponent2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EComponent3%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EComponent4%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navigation_content%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EComponent1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EComponent2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%253EComponent3%253C%252Fspan%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navigation_right_side%2522%253E%250A%2520%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Fdiv%253E"
+              src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0.97%29&t=night-owl&wt=none&l=jsx&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=49px&ln=false&fl=1&fm=Space+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522navigation_main%2522%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navigation_left_side%2522%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation_Hamburger_Icon%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520className%253D%2522navigation_Hamburger_Icon_item%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520className%253D%2522navigation_Hamburger_Icon_item%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cdiv%2520className%253D%2522navigation_Hamburger_Icon_item%2522%253E%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522navigation_logo%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Ch3%253ELogo%253C%252Fh3%253E%250A%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navigation_content%2522%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520className%253D%2522navigation_content_item%2522%253EComponent1%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520className%253D%2522navigation_content_item%2522%253EComponent2%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%253Cspan%2520className%253D%2522navigation_content_item%2522%253EComponent3%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fas%2520fa-shopping-cart%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522navigation_right_side%2522%253E%250A%2520%2520%2520%2520%2520%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%250A%253C%252Fdiv%253E"
               style={{
                 height: "100%",
                 minHeight: "700px",
