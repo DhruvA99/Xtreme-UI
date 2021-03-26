@@ -45,7 +45,7 @@ const NavBar = (props) => {
                   <span className={classes.navigation_content_item}>
                     Component3
                   </span>
-                  <i className="fa fa-shopping-cart fa-2x"></i>
+                  <i className="fa fa-shopping-cart fa-1x"></i>
                 </div>
               </div>
             </div>
