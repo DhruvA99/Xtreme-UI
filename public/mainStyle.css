@@ -259,7 +259,8 @@
   border-radius: 3px;
   position: absolute;
   right: 0;
-  top: 3.3em;
+  color: white;
+  top: 3.6em;
   height: 3.3rem;
   background-color: var(--primary-color);
   transition: all 0.4s linear;
