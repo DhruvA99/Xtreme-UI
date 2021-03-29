@@ -24,14 +24,17 @@ const Card = (props) => {
                   src="https://via.placeholder.com/150"
                   alt="img"
                 />
+
                 <div className={classes.card_content}>
                   <span className={classes.card_content_heading}>
                     Card Title
                   </span>
-                  <span className={classes.card_content_description}>
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </span>
+                  <div className={classes.card_content_descriptionDiv}>
+                    <span className={classes.card_content_description}>
+                      Some quick example text to build on the card title and
+                      make up the bulk of the card's content.
+                    </span>
+                  </div>
                   <div className={classes.card_button_group}>
                     <button
                       className={`${classes.btn} ${classes.btn_primary} ${classes.width_50}`}
@@ -61,10 +64,62 @@ const Card = (props) => {
               sandbox="allow-scripts allow-same-origin"
             ></iframe>
           </div>
-          <br />
-          <br />
-          <br />
+          <div className={classes.container_usage}>
+            <div className={classes.component_boundary}>
+              <div className={classes.card2}>
+                <img
+                  className={`${classes.card_image} ${classes.width_100}`}
+                  src="https://via.placeholder.com/150"
+                  alt="img"
+                />
+                <div className={classes.ribbon_wrapper}>
+                  <div className={classes.ribbon}>SALE</div>
+                </div>
+                <div className={classes.card_content2}>
+                  <span className={classes.card_content_heading}>
+                    ProductName
+                  </span>
+                  <div className={classes.card_content_descriptionDiv}>
+                    <div className={classes.card_content_priceDiv}>
+                      <span className={classes.card_content_price_discounted}>
+                        $352
+                      </span>
+                      <span className={classes.card_content_price_original}>
+                        $400
+                      </span>
+                      <span className={classes.card_content_price_discount}>
+                        (10% OFF)
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div className={classes.custom_button_cart}>
+                  <i class="fa fa-cart-arrow-down fa-2x"></i>
+                </div>
+                <div className={classes.custom_button_wishlist}>
+                  <i class="fa fa-heart fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <span className={classes.codeHeading}>Code:</span>
+
+          <iframe
+            src="https://carbon.now.sh/embed?bg=rgba%28255%2C255%2C255%2C0.97%29&t=night-owl&wt=none&l=jsx&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=56px&ph=49px&ln=false&fl=1&fm=Space+Mono&fs=14px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522card2%2522%253E%250A%2520%2520%253Cimg%250A%2520%2520%2520%2520class%253D%2522card_image%2522%250A%2520%2520%2520%2520src%253D%2522https%253A%252F%252Fvia.placeholder.com%252F150%2522%250A%2520%2520%2520%2520alt%253D%2522img%2522%250A%2520%2520%252F%253E%250A%2520%2520%253Cdiv%2520class%253D%2522ribbon_wrapper%2522%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522ribbon%2522%253ESALE%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522card_content2%2522%253E%250A%2520%2520%2520%2520%253Cspan%2520class%253D%2522card_content_heading%2522%253E%250A%2520%2520%2520%2520%2520%2520ProductName%250A%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_content_descriptionDiv%2522%253E%250A%2520%2520%2520%2520%2520%2520%253Cdiv%2520class%253D%2522card_content_priceDiv%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522content_price_discounted%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2524352%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card_content_price_original%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2524400%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%253Cspan%2520class%253D%2522card_content_price_discount%2522%253E%250A%2520%2520%2520%2520%2520%2520%2520%2520%2520%2520%2810%2525%2520OFF%29%250A%2520%2520%2520%2520%2520%2520%2520%2520%253C%252Fspan%253E%250A%2520%2520%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522custom_button_cart%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-cart-arrow-down%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%2520%2520%253Cdiv%2520class%253D%2522custom_button_wishlist%2522%253E%250A%2520%2520%2520%2520%253Ci%2520class%253D%2522fa%2520fa-heart%2520fa-2x%2522%253E%253C%252Fi%253E%250A%2520%2520%253C%252Fdiv%253E%250A%253C%252Fdiv%253E"
+            style={{
+              height: "100%",
+              minHeight: "900px",
+              border: "0",
+              transform: "scale(1)",
+              overflow: "hidden",
+            }}
+            sandbox="allow-scripts allow-same-origin"
+          ></iframe>
         </div>
+
+        <br />
+        <br />
+        <br />
       </div>
     </div>
   );
