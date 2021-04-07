@@ -10,6 +10,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Documentation from "./components/Documentation/Documentation";
 import Navigation from "./components/Navigation/Navigation";
 import { Route, Switch } from "react-router";
+import Avatar from "./components/Avatars/Avatars";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/navbar" exact component={NavBar} />
         <Route path="/notificationicons" exact component={NotificationIcons} />
         <Route path="/spinner" exact component={Spinner} />
+        <Route path="/avatars" exact component={Avatar} />
       </Switch>
     </div>
   );

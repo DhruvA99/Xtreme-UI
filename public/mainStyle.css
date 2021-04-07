@@ -407,6 +407,36 @@
   }
 }
 
+.avatar_normal {
+  position: relative;
+  padding: 0.1rem;
+}
+
+.avatar_image {
+  vertical-align: middle;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.status {
+  border-radius: 50%;
+  width: 0.7rem;
+  border: 0.2px solid white;
+  position: absolute;
+  bottom: 4px;
+  right: 4px;
+  height: 0.7rem;
+}
+.offline_status {
+  background-color: var(--secondary-color);
+}
+.online_status {
+  background-color: var(--tertiery-color);
+}
+.idle_status {
+  background-color: #ffbb00;
+}
+
 .toolTip {
   position: relative;
   display: inline-block;
@@ -626,6 +656,7 @@
   justify-content: space-around;
   flex-grow: 1;
 }
+
 @media only screen and (max-width: 789px) {
   .navigation_main {
     flex-direction: column;

@@ -61,6 +61,14 @@ const Navigation = () => {
         >
           Alert
         </NavLink>
+        <NavLink
+          className={classes.navlink}
+          activeClassName={classes.selected}
+          to="/avatars"
+          onClick={navbarHandler}
+        >
+          Avatars
+        </NavLink>
 
         <NavLink
           className={classes.navlink}
