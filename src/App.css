@@ -1,0 +1,18 @@
+:root {
+  --primary-color: #4564fd;
+  --primary-hover-color: #2563eb;
+  --secondary-color: #ff4b3e;
+  --secondary-hover-color: #be185d;
+  --tertiery-color: #73bfb8;
+  --tertiery-hover-color: #059669;
+  --disabled-color: #6b7280;
+  --primary-text-color: black;
+  --secondary-text-color: white;
+  --code-editor-color: #282c34;
+  --ribbon-color-primary: #73bfb8;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+.App {
+  text-align: center;
+}

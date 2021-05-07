@@ -1,0 +1,392 @@
+:root {
+  --primary-color: #60a5fa;
+  --primary-hover-color: #2563eb;
+  --secondary-color: #ec4899;
+  --secondary-hover-color: #be185d;
+  --tertiery-color: #34d399;
+  --tertiery-hover-color: #059669;
+  --disabled-color: #6b7280;
+  --primary-text-color: black;
+  --secondary-text-color: white;
+  --code-editor-color: #282c34;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  margin: 3px;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  font-family: "Roboto", sans-serif;
+  transition: 0.6s;
+  border: none;
+  outline: none;
+}
+.btn:hover {
+  box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+}
+
+.btn_primary {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+.btn_primary:focus {
+  border: 0.4px solid var(--primary-hover-color);
+}
+.btn_secondary {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+.btn_secondary:focus {
+  border: 0.4px solid var(--secondary-hover-color);
+}
+.btn_default {
+  background-color: var(--tertiery-color);
+  color: var(--secondary-text-color);
+}
+.btn_default:focus {
+  border: 0.4px solid var(--tertiery-hover-color);
+}
+.btn_disabled {
+  background-color: var(--disabled-color);
+  color: var(--secondary-text-color);
+  cursor: not-allowed;
+}
+.btn_link {
+  color: var(--primary-text-color);
+  border: 0.1px solid black;
+}
+.btn_link:hover {
+  text-decoration: underline;
+}
+.btn_primary_outline {
+  background-color: transparent;
+  border: 0.5px solid var(--primary-color);
+  transition: 0.4s linear;
+}
+.btn_primary_outline:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-text-color);
+}
+.btn_secondary_outline {
+  background-color: transparent;
+  border: 0.5px solid var(--secondary-color);
+  transition: 0.4s linear;
+}
+.btn_secondary_outline:hover {
+  background-color: var(--secondary-color);
+  color: var(--secondary-text-color);
+}
+.btn_default_outline {
+  background-color: transparent;
+  border: 0.5px solid var(--tertiery-color);
+  transition: 0.4s linear;
+}
+.btn_default_outline:hover {
+  background-color: var(--tertiery-color);
+  color: var(--secondary-text-color);
+}
+.btn_disabled_outline {
+  background-color: white;
+  border: 0.5px solid var(--disabled-color);
+  transition: 0.4s linear;
+  color: var(--disabled-color);
+  cursor: not-allowed;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown_content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.dropdown_content a {
+  color: black;
+  padding: 1em 0.5em;
+  text-decoration: none;
+  display: block;
+}
+.dropdown_content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+
+.alert {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0.8em;
+  word-spacing: 2px;
+  z-index: 1;
+  position: relative;
+  margin: 0.2em;
+}
+.alert > i {
+  padding-right: 1em;
+  padding-left: 2px;
+}
+.alert_normal {
+  color: #0101a8;
+  border: 2px solid #5fc2fb;
+  background-color: #bee3f8;
+}
+
+.alert_error {
+  color: #a80101;
+  border: 2px solid #ff0000;
+  background-color: #fed7d7;
+}
+
+.alert_success {
+  color: #007137;
+  border: 2px solid #006312;
+  background-color: #c6f6d5;
+}
+.alert_warning {
+  color: #7a7e00;
+  border: 2px solid #dbd000;
+  background-color: #feebc8;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  padding: 0.7em;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+.card_image {
+  padding-bottom: 0.3em;
+}
+.card_content {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+.card_content_heading {
+  display: block;
+
+  font-size: 1.4em;
+}
+.card_content_description {
+  padding: 0.4em 0;
+}
+.card_button_group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.spinner_primary {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1em solid #cac8c8;
+  border-top: 1em solid var(--primary-color);
+  border-radius: 50%;
+  animation: spin 3.1s linear infinite;
+}
+.spinner_secondary {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1em solid #cac8c8;
+  border-right: 1em solid var(--secondary-color);
+  border-radius: 50%;
+  animation: spin 3.1s linear infinite;
+}
+.spinner_tertiery {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border: 1em solid #cac8c8;
+  border-bottom: 1em solid var(--tertiery-color);
+  border-radius: 50%;
+  animation: spin 3.1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.toolTip {
+  position: relative;
+  display: inline-block;
+}
+.toolTipText_top {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 0px;
+}
+.toolTipText_top::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #000000 transparent transparent transparent;
+}
+.toolTipText_bottom {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 125%;
+  left: 0px;
+}
+.toolTipText_bottom::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid black;
+}
+.toolTipText_right {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0px;
+  left: 103%;
+}
+.toolTipText_right::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 30%;
+  right: 100%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid rgb(0, 0, 0);
+}
+.toolTipText_left {
+  visibility: hidden;
+  width: 100%;
+  min-width: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 7px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 103%;
+}
+.toolTipText_left::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  top: 30%;
+  left: 100%;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+
+  border-left: 5px solid #000000;
+}
+.toolTip:hover .toolTipText_top {
+  visibility: visible;
+}
+.toolTip:hover .toolTipText_bottom {
+  visibility: visible;
+}
+.toolTip:hover .toolTipText_right {
+  visibility: visible;
+}
+.toolTip:hover .toolTipText_left {
+  visibility: visible;
+}
+.badge_main {
+  margin: 0.6em 1em;
+  position: relative;
+}
+
+.badge_circle_right {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  padding: 2.5px 5px;
+  font-size: 0.7em;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+.badge_circle_left {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  padding: 2.5px 5px;
+  border-radius: 50%;
+  font-size: 0.7em;
+  background: red;
+  color: white;
+}
+.badge_box_right {
+  position: absolute;
+  top: -10px;
+  border-radius: 5px;
+  right: -10px;
+  font-size: 0.7em;
+  padding: 0.2em;
+  background: red;
+  color: white;
+}
+.badgeIcon_circle_right {
+  position: absolute;
+  top: -10px;
+  padding: 1px 3px;
+  font-size: 0.6em;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}

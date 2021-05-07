@@ -1,0 +1,127 @@
+.navigation_main {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 0.2px solid black;
+}
+.navigation_left_side {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.navigation_content {
+  display: flex;
+  flex-grow: 2;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.navigation_sidebar {
+  visibility: hidden;
+  width: 0%;
+  height: 0;
+}
+.sideBarExtra {
+  display: none;
+}
+.navigation_logo {
+  width: 100px;
+  max-width: 90px;
+}
+.navigation_Hamburger_Icon {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1em;
+  padding-left: 1em;
+}
+.hamburgerItem {
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 3px 0;
+}
+
+.navigation_right_side {
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 1;
+}
+@media only screen and (max-width: 789px) {
+  .navigation_main {
+    flex-direction: column;
+  }
+  .navigation_content {
+    display: none;
+  }
+  .sideBarExtra {
+    display: flex;
+    flex-direction: column;
+  }
+  .navigation_right_side {
+    display: none;
+  }
+
+  .navigation_logo {
+    flex-grow: 4;
+    padding-left: 25%;
+  }
+  .navigation_left_side {
+    width: 100%;
+    justify-content: space-around;
+  }
+}
+
+.navigaton_sidebar_open {
+  display: flex;
+  visibility: visible;
+  flex-direction: column;
+  height: 100%; /* 100% Full-height */
+  width: 250px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #6b7280; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: all 0.5s; /* 0.5 second transition effect to slide in the sidena*/
+}
+.navigation_sidebar_closeBtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  cursor: pointer;
+  font-size: 36px;
+  color: #610707;
+  margin-left: 50px;
+}
+
+.selected {
+  border-left: 5px solid #1e3a8a;
+  background-color: #1e3b8a4b;
+}
+.selectedExtra {
+  color: #1e3a8a;
+}
+.navlink {
+  text-decoration: none;
+  color: white;
+  padding: 0.7em;
+  margin: 0.7em 0.6em;
+}
+.navlink:hover {
+  background-color: #374151;
+  margin-left: 0.9em;
+}
+.navlinkExtra {
+  text-decoration: none;
+  color: #2c2828;
+  padding: 0.7em;
+  margin: 0.7em 0.6em;
+}
+.navlinkExtra:hover {
+  background-color: #f3f4f6;
+}

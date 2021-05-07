@@ -1,0 +1,37 @@
+.alert {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0.8em 1em;
+  word-spacing: 2px;
+  z-index: 1;
+  position: relative;
+  margin: 0.2em 0.5em;
+}
+.alert > i {
+  padding-right: 1em;
+  padding-left: 2px;
+}
+.alert_normal {
+  color: #0101a8;
+  border: 2px solid #5fc2fb;
+  background-color: #bee3f8;
+}
+
+.main {
+  display: flex;
+  padding-left: 1em;
+  flex-direction: column;
+  text-align: left;
+}
+.heading {
+  display: block;
+  font-size: 3em;
+  font-weight: 600;
+}
+.heading2 {
+  font-weight: 500;
+  font-size: 1.7em;
+  display: block;
+  padding: 2.5em 0;
+}
